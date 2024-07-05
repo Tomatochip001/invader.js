@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>インベーダーゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="startScreen">
+        <h1>インベーダーゲーム</h1>
+        <button id="rulesButton">ルール説明</button>
+        <button id="controlsButton">キーボード割り当て</button>
+        <p>Enterキーでゲーム開始</p>
+    </div>
+    <div id="rulesScreen" class="infoScreen">
+        <h2>ルール説明</h2>
+        <p>敵をすべて倒して次のレベルに進みましょう。</p>
+        <button id="backButton1">戻る</button>
+    </div>
+    <div id="controlsScreen" class="infoScreen">
+        <h2>キーボード割り当て</h2>
+        <p>左矢印キー：左移動</p>
+        <p>右矢印キー：右移動</p>
+        <p>スペースキー：弾を撃つ</p>
+        <button id="backButton2">戻る</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <div id="gameOverScreen" class="infoScreen">
+        <h2>ゲームオーバー</h2>
+        <button id="retryButton">リトライ</button>
+        <button id="homeButton">ホームに戻る</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
